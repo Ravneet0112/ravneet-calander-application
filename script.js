@@ -6,17 +6,16 @@
 var timeDisplayEl = $('#currentDay');
 var descriptionEL = $(".descrition");
 var timeblockEl = $(".time-block");
-
-var hourEl = $(".hour");
+var textarea = $("textarea")
+var hourEl = $(".hour").text();
 //console.log(Date.parseExact("8:00AM", "hh:mm tt"));
 
 //let time = Date.parseExact('8:00 AM', "hh:mm tt");
 //console.log(time);
 
-$('#btn');
+var timetext = console.log($(this).hourEl);
 
-
-
+var currenthour = dayjs().format('MMM DD, YYYY  hh:mm:ss a');
 $(document).ready(function () {
 
   function displayTime() {
@@ -39,24 +38,24 @@ $(document).ready(function () {
     var description = $(this).siblings(".description").val();
     localStorage.setItem(time, description);
     
-    var event = localStorage.getItem("time");
-    return (event);
+    $(this).description = localStorage.getItem("item");
+   
   })
 
  // if(rightNow < dayjs("10:00", "hh:mm"){
     
 //  })
-function gettime(){
-if ($(this).chlid("hourEl").attr() < currenthour){
-  timeblockEl.css(".past");
-}
-elseif ($(this).timeblockEl.hourEl.attr() > currenthour);{
-  timeblockEl.css(".future");
-}
-{
-  timeblockEl.css(".present");
-}}
-gettime();
+//function gettime(){
+//if ($(this)."hourEl".attr() < currenthour){
+//  timeblockEl.css(".past");
+//}
+//elseif ($(this).timeblockEl.hourEl.attr() > currenthour);{
+//  timeblockEl.css(".future");
+//}
+//{
+//  timeblockEl.css(".present");
+//}}
+//gettime();
   
   
   // TODO: Add code to apply the past, present, or future class to each time
@@ -65,20 +64,26 @@ gettime();
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   
-  
+    var hour = $(".timeblock div").text();
+    var timer = dayjs().format(hour);
+    console.log(timer);
 
+    function lessthennine(){
+      const lessthennine = '09:00:00';
+      if (currenthour < lessthennine){
+        $("#hour-9, #hour10, #hour11, #hour12, #hour13, #hour14, #hour15, #hour16, #hour17, #hour18, #hour19, #hour20, #hour 21, #hour22, #hour 23").css("background-color", "pink");
+      }
 
+    }
+
+    lessthennine();
+    
   //localStorage.setItem(key, value);
   //let lastname = localStorage.getItem(key);
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-
-  
-
-
-  //
   // TODO: Add code to display the current date in the header of the page.
 });
 
