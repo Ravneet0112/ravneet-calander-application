@@ -15,8 +15,8 @@ var hourEl = $(".hour").text();
 
 var timetext = console.log($(this).hourEl);
 
-var current = dayjs().hour();
-//console.log(current);
+var current = dayjs().hour(); 
+//console.log(current); this is log the hour from 0 - 23 which is used in lessthennine func
 $(document).ready(function () {
 
   function displayTime() {
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
   function lessthennine() {
     for (i = 9; i < 18; i++) {
-
+      // Function will call for the loop from 9 AM to 5 PM 
       $("#hour-"+i).children("textarea").val(localStorage.getItem("hour-"+i));
 
       if (current < i) {
