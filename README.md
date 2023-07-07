@@ -18,6 +18,8 @@ Users can clone repository and open index.html in a web browser.
     
 ## Usage
 To manage daily task and time.
+
+![Workday with task](https://github.com/Ravneet0112/ravneet-calander-application/assets/101073782/743aee68-624a-4aaa-9f30-3cae4d4b221f)
  
 
 ## Questions
