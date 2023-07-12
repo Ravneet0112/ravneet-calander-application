@@ -15,6 +15,10 @@ This app will help users to organize there daily work, so that can manage time a
 
 ## Installation
 Users can clone repository and open index.html in a web browser.
+
+For live viwe, please click below: 
+
+https://ravneet0112.github.io/ravneet-calander-application/
     
 ## Usage
 To manage daily task and time.
